@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>삼성중공업</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="css/sub1_3.css">
+    <link rel="shortcut icon" href="../favicons.ico">
+    <script src="../common/js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="js/sub1_3.js"></script>
+
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=793ba1352b1a1dabe2070cf1b055f838"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+                <div class="header_box">
+                    <h1 id="logo"><a href="../../m/index.html"><img src="../../m/common/images/header_logo.png" alt="로고이미지"></a></h1>
+                    <span class="menu_icon"><a href="javascript:void(0);">메뉴아이콘</a></span>
+                </div>
+                <div class="menu_bg"></div>
+                <nav id="gnb">
+                    <span class="close_btn"><a href="javascript:void(0);">닫기버튼</a></span>
+                    <ul class="main_menu">
+                        <li><a href="javascript:void(0);"  class="depth">회사소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="../../m/sub1/sub1_1.html">기업정보</a></li>
+                                <li><a href="../../m/sub1/sub1_2.html">연혁</a></li>
+                                <li><a href="../../m/sub1/sub1_3.html">사업장소개</a></li>
+                                <li><a href="../../m/sub1/sub1_4.html">CI</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);" class="depth">제품/기술</a>
+                            <ul class="sub_menu">
+                                <li><a href="../../m/sub2/sub2_1.html">조선/해양/기술/개발</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);" class="depth">인재채용</a>
+                            <ul class="sub_menu">
+                                <li><a href="../../m/sub3/sub3_1.html">채용공고/채용문의</a></li>
+                                <li><a href="../../m/sub3/sub3_2.html">인재상</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);" class="depth">투자정보</a>
+                            <ul class="sub_menu">
+                                <li><a href="../../m/sub4/sub4_1.html">재무정보</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="section">
+            <h2 class="hidden">컨텐츠영역</h2>
+            <article id="work_place">
+                <h3>사업장소개</h3>
+                <img src="images/img_wp.gif" alt="사업장이미지">
+                <div class="tab_wrap">
+                    <div class="tap_menu">
+                        <ul>
+                            <li><a href="javascript:void(0)" id="first_click" class="current">국내 사업장</a></li>
+                            <li><a href="javascript:void(0)">해외 사업장</a></li>
+                        </ul>
+                        <!-- //탭1 -->
+                        <div class="sub_tab1 sub_menu">
+                            <ul>
+                                <li><a href="javascript:void(0)" id="sub_first" class="sub_current">판교R&D센터</a></li>
+                                <li><a href="javascript:void(0)">거제조선소</a></li>
+                                <li><a href="javascript:void(0)">대덕연구센터</a></li>
+                            </ul>
+                            <div class="tab_cnt_wrap">
+                                <div class="sub_con1 tab">
+                                            <h4>판교R&D센터</h4>
+                                            <address>경기도 성남시 분당구 판교로 227번길 23 삼성중공업 판교R&D센터 우 13486<br>
+                                                031-5171-7000
+                                            </address>
+                                            <div id="map" class="map" style="width: 90%;height: 35vh;">
+
+                                            </div>
+                                </div>
+                                <div class="sub_con2 tab">
+                                            <h4>거제조선소</h4>
+                                            <address>경상남도 거제시 장평3로 80(장평동) 우 53261<br>
+                                                TEL 055-630-3114
+                                            </address>
+                                            <div id="map02" class="map" style="width: 90%;height: 35vh;">
+                                                
+                                            </div>
+                                </div>
+                                <div class="sub_con3 tab">
+                                            <h4>대덕연구센터</h4>
+                                            <address>대전광역시 유성구 문지로 217 우 34051<br>
+                                                042-865-4300
+                                            </address>
+                                            <div id="map03" class="map" style="width: 90%;height: 35vh;">
+                                                
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //탭2 -->
+                        <div class="sub_tab2 sub_menu">
+                                <div class="tab_cnt_wrap">
+                                    <img src="images/overseasMap.png" alt="해외지점 지도" class="overseas_map">
+                                    <h4>중국법인</h4>
+                                    <dl>
+                                        <dt>영파법인 (NINGBO)</dt>
+                                        <dd>
+                                            <p>1995년 설립된 영파법인은 1996년 6월 공장을 건설하기 시작해 이듬해 8월부터 운영을 시작했습니다. <br>78만5천 평방미터의 땅 위에 해외 및 국내 시장을 위한 조선과 철구조물의 선체 블럭 생산을 위해 특화된 영파법인은 충분한 사회간접시설과 고기술의 경쟁력 있는 인력들을 기반으로 연간 20만톤의 선체블록을 생산 공급해오고 있습니다.</p>
+                                            <img src="images/overseasImg01.jpg" alt="영파법인 (NINGBO)">
+                                            <table>
+                                                <caption class="hidden">영파법인</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>지점</th>
+                                                        <th>주소</th>
+                                                        <th>전화번호</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>SAMSUNG HEAVY<br>INDUSTRIES (NINGBO) CO., LTD.</th>
+                                                        <td>Quingshi Industries Zone, Xiaogang Ningbo 315803, China</td>
+                                                        <td>Tel  : 86-574-8622-6688<br>Fax : 86-574-8622-4275</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>영성법인 (RONGCHENG)</dt>
+                                        <dd>
+                                            <p>2006년 3월 7일 착공식을 갖고 본격적인 공사에 돌입한 영성법인은 부지 200만㎡ 규모로 2007년 9월부터 블록을 생산하고 있으며, 2008년에는 선박용 블록과 해양설비 등 연간 50만톤의 생산능력을 갖추게 되었습니다. <br>삼성중공업은 영파법인에 이은 제2의 중국 생산기지를 구축함으로써 안정적인 블록 조달, 원가경쟁력 제고, 폭증하는 건조물량처리 및 생산량 증대 등을 통해 세계 초일류 회사로 도약한다는 계획입니다.</p>
+                                            <img src="images/overseasImg02.jpg" alt="영성법인 (NINGBO)">
+                                            <table>
+                                                <caption class="hidden">영성법인</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>지점</th>
+                                                        <th>주소</th>
+                                                        <th>전화번호</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>SAMSUNG HEAVY<br>INDUSTRIES (RONGCHENG) CO., LTD.</th>
+                                                        <td>No.39 Lidao town,Rongcheng City 264-200, China</td>
+                                                        <td>Tel  : 86-631-7767-888<br>Fax : 86-631-7767-009</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </dd>
+                                    </dl>
+                                    <h4>해외지점망</h4>
+                                    <dl>
+                                        <dt>아시아</dt>
+                                        <dd>
+                                            <table class="asia">
+                                                <caption class="hidden">아시아</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>지점</th>
+                                                        <th>주소</th>
+                                                        <th>전화번호</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>동경지점</th>
+                                                        <td>Idabashi Grand Bloom, 2-10-2, Fujimi, Chiyoda-ku, Tokyo 102-0071, Japan</td>
+                                                        <td>Tel : +81-3-6333-2931<br>Fax : +81-3-6333-2935</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>싱가포르지점</th>
+                                                        <td>049483 3 Church St, #21-03 Samsung Hub Bldg Singapore Singapore</td>
+                                                        <td>Tel : +65-65-50-8182<br>Fax : +65-65-50-8188</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>인도설계센터</th>
+                                                        <td>201301 Logix Cyber Park, Block-B, 1st Floor C-2 &amp; C29, Sec-62, Noida-201301 U.P, India</td>
+                                                        <td>Tel : +91-120-468-6002<br>Fax : +91-120-468-6007</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>미주</dt>
+                                        <dd>
+                                            <table class="asia">
+                                                <caption class="hidden">무지</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>지점</th>
+                                                        <th>주소</th>
+                                                        <th>전화번호</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>휴스턴지점</th>
+                                                        <td>11757 Katy Freeway, Suite 800 Houston TX 77079</td>
+                                                        <td>Tel : +1-281-679-8460<br>Fax : +1-281-679-8473</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>유럽</dt>
+                                        <dd>
+                                            <table class="asia">
+                                                <caption class="hidden">유렵</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>지점</th>
+                                                        <th>주소</th>
+                                                        <th>전화번호</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>런던지점</th>
+                                                        <td>1st Floor, East Wing, 30 Gresham Street London UK, EC2V 7PG</td>
+                                                        <td>Tel : +44-20-3598-8501 <br>Fax : +44-20-3598-8509</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>오슬로지점</th>
+                                                        <td>Haakon Vll's Gate 1 0160 Oslo, Norway 1582</td>
+                                                        <td>Tel : +47-22-83-3777<br>Fax : +47-22-83-3778</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>아테네지점</th>
+                                                        <td>24A, Kifissias Avenue, Marousi, Athens Greece 15125</td>
+                                                        <td>Tel : +30-210-934-4866<br>Fax : +30-210-934-8163</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </dd>
+                                    </dl>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer id="footer">
+            <div class="footer_btn">
+                <a href="../../index.html" class="pc">PC버전</a>
+                <a href="javascript:void(0);" class="top_btn">TOP</a>
+            </div>
+            <div class="footer_logo"><a href="index.html"><img src="../common/images/footer_logo.png" alt="푸터 로고"></a></div>
+            <div class="footer_info">
+                <address>경기도 성남시 분당구 판교로 227번길 23 대표번호 031-5171-7000</address>
+                <p>Copyright &copy; 2017 Sansung Heavy Industry Co.Ltd All right reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // map 1
+       var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+           mapOption = {
+               center: new kakao.maps.LatLng(37.40432402906563, 127.09909499796359), // 지도의 중심좌표
+               level: 4, // 지도의 확대 레벨
+               mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+           }; 
+
+       // 지도를 생성한다 
+       var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+       // 지도 타입 변경 컨트롤을 생성한다
+       var mapTypeControl = new kakao.maps.MapTypeControl();
+
+       // 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
+       map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);	
+
+       // 지도에 확대 축소 컨트롤을 생성한다
+       var zoomControl = new kakao.maps.ZoomControl();
+
+       // 지도의 우측에 확대 축소 컨트롤을 추가한다
+       map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+       // 지도에 마커를 생성하고 표시한다
+       var marker = new kakao.maps.Marker({
+           position: new kakao.maps.LatLng(37.40432402906563, 127.09909499796359), // 마커의 좌표
+           map: map // 마커를 표시할 지도 객체
+       });
+
+       // 커스텀 오버레이를 생성하고 지도에 표시한다
+       var customOverlay = new kakao.maps.CustomOverlay({
+           map: map,
+           content: '<div style="padding:0 5px;background:#fff;">삼성중공업~~</div>', 
+           position: new kakao.maps.LatLng(37.40432402906563, 127.09909499796359), // 커스텀 오버레이를 표시할 좌표
+           xAnchor: 0.5, // 컨텐츠의 x 위치
+           yAnchor: 0 // 컨텐츠의 y 위치
+       });
+   
+   // map 2
+   var mapContainer = document.getElementById('map02'), // 지도를 표시할 div 
+           mapOption = {
+               center: new kakao.maps.LatLng(34.89656817513214, 128.6098416420904), // 지도의 중심좌표
+               level: 4, // 지도의 확대 레벨
+               mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+           }; 
+
+       // 지도를 생성한다 
+       var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+       // 지도 타입 변경 컨트롤을 생성한다
+       var mapTypeControl = new kakao.maps.MapTypeControl();
+
+       // 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
+       map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);	
+
+       // 지도에 확대 축소 컨트롤을 생성한다
+       var zoomControl = new kakao.maps.ZoomControl();
+
+       // 지도의 우측에 확대 축소 컨트롤을 추가한다
+       map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+       // 지도에 마커를 생성하고 표시한다
+       var marker = new kakao.maps.Marker({
+           position: new kakao.maps.LatLng(34.89656817513214, 128.6098416420904), // 마커의 좌표
+           map: map // 마커를 표시할 지도 객체
+       });
+
+       // 커스텀 오버레이를 생성하고 지도에 표시한다
+       var customOverlay = new kakao.maps.CustomOverlay({
+           map: map,
+           content: '<div style="padding:0 5px;background:#fff;">삼성중공업~~</div>', 
+           position: new kakao.maps.LatLng(34.89656817513214, 128.6098416420904), // 커스텀 오버레이를 표시할 좌표
+           xAnchor: 0.5, // 컨텐츠의 x 위치
+           yAnchor: 0 // 컨텐츠의 y 위치
+       });
+
+   // map3
+var mapContainer = document.getElementById('map03'), // 지도를 표시할 div 
+mapOption = {
+   center: new kakao.maps.LatLng(36.392192899671684, 127.40214038260257), // 지도의 중심좌표
+   level: 4, // 지도의 확대 레벨
+   mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
+}; 
+
+// 지도를 생성한다 
+var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+// 지도 타입 변경 컨트롤을 생성한다
+var mapTypeControl = new kakao.maps.MapTypeControl();
+
+// 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
+map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);	
+
+// 지도에 확대 축소 컨트롤을 생성한다
+var zoomControl = new kakao.maps.ZoomControl();
+
+// 지도의 우측에 확대 축소 컨트롤을 추가한다
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+// 지도에 마커를 생성하고 표시한다
+var marker = new kakao.maps.Marker({
+position: new kakao.maps.LatLng(36.392192899671684, 127.40214038260257), // 마커의 좌표
+map: map // 마커를 표시할 지도 객체
+});
+
+// 커스텀 오버레이를 생성하고 지도에 표시한다
+var customOverlay = new kakao.maps.CustomOverlay({
+map: map,
+content: '<div style="padding:0 5px;background:#fff;">삼성중공업~~</div>', 
+position: new kakao.maps.LatLng(36.392192899671684, 127.40214038260257), // 커스텀 오버레이를 표시할 좌표
+xAnchor: 0.5, // 컨텐츠의 x 위치
+yAnchor: 0 // 컨텐츠의 y 위치
+});
+   </script>
+</body>
+</html>

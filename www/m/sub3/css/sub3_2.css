@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+#talent{width: 87%;margin: 0 auto;margin-top: 15vh;}
+#talent>h3{font-size: 10vw;color: #333;font-weight: bold;text-align: center;}
+#talent>img{display: block;width: 100%; margin-top: 7vh;}
+
+#talent>.info_txt{}
+#talent>.info_txt>img{display: block; width: 100%;margin-top: 5vh;}
+#talent>.info_txt>p{margin-top: 5vh;font-size: 5vw;color: #333;}

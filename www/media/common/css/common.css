@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* Reset CSS  */
+@font-face {
+    src: url(../../fonts/Rage_Italic_Regular.ttf);
+    font-family: Rage_Italic;
+}
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none;  font-family:'Rage_Italic'}
+body {width: 100%; color:#333; background-image: url(../../images/bg_img.jpg);background-repeat: no-repeat; background-size: cover;background-attachment: fixed;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video { border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+
+.hidden{position: absolute; left: -1000px; top:0; display: block; width: 1px; height: 1px; overflow: hidden; color: #fff}
+
+/* layout */
+
+#wrap{display: flex;position: relative; flex-flow: row wrap;overflow-y: hidden;width: 100%;margin: 0 auto;}
+#header{display: flex;width: 100%; position: fixed;top:0;left: 0; z-index: 100; width: 100vw;}
+#footer{display: flex;width: 100%;margin-top: 150px;}
+
+/* #header */
+header.active::before{content: "";background: url(../../images/bg_img.jpg);opacity: 0.6;background-size:auto; position: absolute;top: 0;left: 0;right: 0;bottom: 0;}
+#header>.header_inner{position: relative; width: 1600px;margin: 0 auto;}
+#header>.header_inner>h1{width: 100px;height: 100px; margin: 10px auto;}
+#header>.header_inner>h1>a{display: block;width: 100%;}
+#header>.header_inner>h1>a>img{display: block;width: 100%;}
+
+#header>.header_inner>span.nav_icon{display: block;width: 40px; position: absolute;top: 40px;right: 3vw;}
+#header>.header_inner>span.nav_icon>a{display: block;width: 100%;}
+#header>.header_inner>span.nav_icon>a>img{display: block;width: 100%;}
+
+/* footer */
+#footer>.footer_inner{width: 100%;}
+#footer>.footer_inner>span.footer_logo{display: block;width: 135px;height: 135px;margin: 10px auto;}
+#footer>.footer_inner>span.footer_logo>a{display: block;width: 100%;}
+#footer>.footer_inner>span.footer_logo>a>img{display: block;width: 100%;}
+
+
+
+
+/* -------------------------------------@media screen------------------------------------------- */
+/* 일반PC(1281px ~ 1600px) */
+@media screen and (max-width : 1600px){
+
+/* #header */
+/* inner width값 100% */
+#header>.header_inner{width: 100%;}
+#header>.header_inner>h1{width: 100px;height: 100px;}
+
+/* footer */
+#footer>.footer_inner>span.footer_logo{width: 125px;height: 125px;}
+
+}
+
+/* 대형 태블릿(769px ~ 1280px) */
+@media screen and (max-width : 1280px){
+    
+/* #header */
+/* inner width값 100% */
+#header>.header_inner>h1{width: 115px;height: 115px;}
+
+/* footer */
+#footer{margin-top: 100px;}
+#footer>.footer_inner>span.footer_logo{width: 115px;height: 115px;}
+
+}
+
+/* 대형 태블릿 세부 조정(769px ~ 1024px) */
+
+@media screen and (max-width : 1024px){
+    /* #header */
+/* inner width값 100% */
+#header>.header_inner>h1{width: 105px;height: 105px;}
+
+/* footer */
+#footer>.footer_inner>span.footer_logo{width: 105px;height: 105px;}
+
+}
+
+
+/* 중형 태블릿(415px ~ 768px) */
+@media screen and (max-width : 768px){
+    body{background-image: url(../../images/smartphone_bg.jpg);background-size: 100% 100%;}
+    /* #header */
+/* inner width값 100% */
+header.active::before{background: url(../../images/smartphone_bg.jpg);background-repeat: no-repeat;}
+#header>.header_inner>h1{width: 85px;height: 85px;}
+#header>.header_inner>span.nav_icon{display: block;width: 40px; position: absolute;top: 4vh;right: 3vw;}
+/* footer */
+#footer{margin-top: 20px;}
+#footer>.footer_inner>span.footer_logo{width: 85px;height: 85px;}
+
+}
+/* 스마트폰 (320px ~ 414px) */
+@media screen and (min-width : 320px) and (max-width : 414px){
+    /* #header */
+/* inner width값 100% */
+#header>.header_inner>h1{width: 75px;height: 75px;}
+#header>.header_inner>span.nav_icon{width: 35px;height: 35px;}
+
+/* footer */
+#footer{margin-top: 0px;}
+#footer>.footer_inner>span.footer_logo{width: 75px;height: 75px;}
+    
+}

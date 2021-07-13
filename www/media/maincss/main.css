@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+/* layout */
+
+#container{display: flex;width: 100%;flex-flow: column wrap;}
+article.visual_con{width: 100%;}
+article.gallery{display: flex;overflow: hidden; width: 1600px;height: auto; flex-flow: row wrap;justify-content: space-between;margin: 0 auto;margin-top: 350px;}
+article.together{display: flex;flex-flow: row nowrap;align-items: center; margin-top: 350px;}
+article.music_video{width: 100%;height: 800px; position: relative; margin-top: 350px;}
+
+/* article.visual_con */
+
+
+article.visual_con>div{width: 100%;}
+article.visual_con>div>img{display: block; width: 100%; }
+
+
+/* article.gallery */
+
+.gallery>div.flex_inner01{display: flex;width: 32.5%; flex-flow: column wrap;justify-content: space-between;}
+.gallery>div.flex_inner02{display: flex;width: 66.25%; flex-flow: row wrap;justify-content: space-between ;}
+
+.gallery>div.flex_inner01>.article_img01{height: 42.6%;}
+.gallery>div.flex_inner01>.article_img06{height: 55.8%;}
+
+.gallery>div.flex_inner02>.article_img02{width: 30.1%;}
+.gallery>div.flex_inner02>.article_img03{width: 67.9%;}
+.gallery>div.flex_inner02>.article_img04{width: 30.1%;margin-top: 10px;}
+.gallery>div.flex_inner02>.article_img05{width: 67.9%;margin-top: 10px;}
+.gallery div>a{display: block;width: 100%;}
+.gallery div>a>img{display: block;width: 100%;}
+
+/* article.together */
+
+article.together>h3{width: 500px; order: 2; font-size: 150px;color: #f8f8f8;font-weight: normal;margin: 0 auto;text-align: center;}
+
+article.together>.together_img{order: 1; width: 60%;}
+article.together>.together_img>a{display: block;width: 100%;}
+article.together>.together_img>a>img{display: block;width: 100%;}
+
+/* article.music_video */
+
+article.music_video h3.music_video_tit{width: 685px; font-size: 150px;color: #f8f8f8;font-weight: normal;margin: 0 auto;text-align: center;}
+article.music_video .swiper-slide>iframe{width: 50%;height: 100%;}
+
+/* 썸네일 슬라이더 */
+
+      .swiper-container {
+        width: 50%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .mySwiper2 {
+        height: 60%;
+        width: 100%;
+      }
+
+      .mySwiper {
+        width: 100%;
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        margin: 40px auto;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.7;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+/* -------------------------------------@media screen------------------------------------------- */
+/* 일반PC(1281px ~ 1600px) */
+@media screen and (max-width : 1600px){
+    /* layout */
+
+article.gallery{width: 1280px;margin-top: 250px;}
+article.together{margin-top: 200px;}
+article.music_video{margin-top: 200px;}
+
+/* article.gallery */
+
+
+/* article.together */
+
+article.together>h3{width: 400px; font-size: 120px;}
+
+
+/* article.music_video */
+article.music_video{height: 800px;}
+
+article.music_video h3.music_video_tit{font-size: 120px;}
+.mySwiper2 {
+    height: 50%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: 40px auto;
+  }
+
+}
+
+/* 대형 태블릿(1025px ~ 1280px) */
+
+@media screen and (max-width : 1280px){
+    /* layout */
+
+article.gallery{width: 100%; margin-top: 200px;}
+article.together{display: flex;flex-flow: row nowrap;align-items: center; margin-top: 200px;}
+article.music_video{margin-top: 200px;}
+
+
+/* article.together */
+
+article.together>h3{font-size: 120px;}
+
+
+/* article.music_video */
+
+article.music_video h3.music_video_tit{font-size: 120px;}
+
+
+.mySwiper2 {
+    height: 50%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: 20px auto;
+  }
+
+
+/* 대형 태블릿 gallery 세부 조정(769px ~ 1024px) */
+
+@media screen and (max-width : 1024px){
+    /* layout */
+
+article.gallery{margin-top: 180px;}
+article.together{display: block;align-items: center; margin-top: 180px;}
+article.music_video{margin-top: 180px;}
+
+/* article.gallery */
+.gallery>div.flex_inner01{order: 2; width: 90%; flex-flow: row wrap; margin: 0 auto;margin-top: 10px;}
+.gallery>div.flex_inner02{order: 1; width: 90%; margin: 0 auto;}
+
+.gallery>div.flex_inner01>.article_img01{width: 49%;}
+.gallery>div.flex_inner01>.article_img06{overflow: hidden; width: 49%;height: 76.4%;}
+
+.gallery>div.flex_inner02>.article_img04{display: none;}
+.gallery>div.flex_inner02>.article_img05{display: none;}
+.gallery div>a{display: block;width: 100%;}
+.gallery div>a>img{display: block;width: 100%;}
+
+
+
+/* article.together */
+
+article.together>h3{width: 700px; font-size: 100px;}
+
+article.together>.together_img{width: 90%;margin: 0 auto;margin-top: 50px;}
+
+
+/* article.music_video */
+article.music_video{height: 600px;}
+article.music_video h3.music_video_tit{font-size: 100px;}
+article.music_video .swiper-slide>iframe{width: 70%;height: 100%;}
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+.mySwiper2 {
+    height: 45%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: 20px auto;
+  }
+
+}
+/* 중형 태블릿(415px ~ 768px) */
+@media screen and (max-width : 768px){
+    /* layout */
+
+article.gallery{margin: 0; margin-top: 150px;}
+article.together{width: 100%; margin-top: 150px;}
+article.music_video{width: 100%; margin-top: 150px;}
+
+/* article.gallery */
+.gallery>div.flex_inner01{order: 2; width: 90%; flex-flow: row wrap;margin: 0 auto;margin-top: 10px;}
+.gallery>div.flex_inner02{order: 1; width: 90%; margin: 0 auto;}
+
+.gallery>div.flex_inner01>.article_img01{width: 49%;}
+.gallery>div.flex_inner01>.article_img06{width: 49%;}
+
+.gallery>div.flex_inner02>.article_img04{display: none;}
+.gallery>div.flex_inner02>.article_img05{display: none;}
+.gallery div>a{display: block;width: 100%;}
+.gallery div>a>img{display: block;width: 100%;}
+
+
+
+/* article.together */
+
+article.together>h3{width: 500px; font-size: 80px;}
+
+article.together>.together_img{width: 90%;margin: 0 auto;margin-top: 50px;}
+
+
+/* article.music_video */
+
+article.music_video h3.music_video_tit{width: 400px; font-size: 80px;}
+article.music_video{height: 600px;}
+article.music_video .swiper-slide>iframe{width: 70%;height: 90%;}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+.mySwiper2 {
+    height: 45%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    width: 100%;
+    height: 15%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: 20px auto;
+  }
+
+}
+/* 스마트폰 (320px ~ 414px) */
+@media screen and (min-width : 320px) and (max-width : 414px){
+    /* layout */
+    
+article.gallery{margin-top: 80px;}
+article.together{ margin-top: 80px;}
+article.music_video{ margin-top: 80px;}
+
+/* article.gallery */
+.gallery>div.flex_inner01{margin-top: 10px;}
+
+.gallery>div.flex_inner01>.article_img01{width: 49%;}
+.gallery>div.flex_inner01>.article_img06{width: 49%;}
+
+/* article.together */
+
+article.together>h3{width: 300px; font-size: 50px;}
+
+article.together>.together_img{width: 90%;margin: 0 auto;margin-top: 50px;}
+
+
+/* article.music_video */
+
+article.music_video h3.music_video_tit{width: 300px; font-size: 50px;padding-bottom: 50px;}
+article.music_video{height: 400px;}
+article.music_video .swiper-slide>iframe{width: 80%;height:100%;}
+
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+.mySwiper2 {
+    height: 45%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    width: 100%;
+    height: 15%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: 20px auto;
+  }
+  }

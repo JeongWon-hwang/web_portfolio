@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+*{color:#333;line-height: 26px;}
+#sub_visual{position:relative; width: 1280px;height: 400px;}
+#sub_visual>.sub_tit{position: absolute;width: 402px;height: 233px;   top: 318px;right: 0;}
+#sub_visual>.sub_tit>img{display: block;}
+#sub_visual>.sub_img>img{display: block;}
+
+#CI{width: 1280px;margin: 100px auto;}
+#CI>h3{font-size: 40px;color: #333;margin-left: 80px;}
+#CI>p{display: block;width: 95%;height: 85px;font-size: 16px;margin-left: 70px;margin-top: 50px;line-height: 30px;}
+
+
+#CI>div{overflow: hidden;width: 1192px;margin-left: 70px;  margin-top: 100px;border-top: 1px solid #bcbcbc;}
+#CI>div>h4{float: left;width: 160px; font-size: 20px;color:#273796;padding: 30px 0;}
+#CI>div>div{float: right;padding: 30px 0;}
+#CI>div>div>strong{margin-bottom: 20px;}
+#CI>div>div>p{font-size: 16px;line-height: 26px;margin-bottom: 25px;}
+
+.color_rule_wrap{width: 900px;margin-top: 50px;}
+.shi_color_wrap .color_list{float: left;width: 255px;margin-right: 20px;}
+.shi_color_wrap .color_list>span{float: left;margin: 8px 0;}
+.shi_color_wrap .color_list>p{float: right;}
+.shi_color_wrap .color_list>p>strong{display: block;}
+
+.CI_down .ci_img{margin-top: 30px;border: 1px solid #bcbcbc;}
+.CI_down .ci_img>img{display: block;width: 945px;height: 126px;}
+.CI_down .btn_area{float: right;margin-top: 30px;}
+.CI_down .btn_area>a{display: block;}
+.CI_down .btn_area>a>img{display: block;width: 141px;height: 35px;}

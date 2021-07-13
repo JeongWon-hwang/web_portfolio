@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+#sub_visual{position:relative; width: 1280px;height: 400px;}
+#sub_visual>.sub_tit{position: absolute;width: 402px;height: 233px;   top: 318px;right: 0;}
+#sub_visual>.sub_tit>img{display: block;}
+#sub_visual>.sub_img>img{display: block;}
+
+#share{overflow: hidden; width: 1280px; margin: 100px auto;background-image: url(../images/share_bg.jpg);background-repeat: no-repeat;background-position:  right 300px;background-size: 542px 582px;}
+#share>h3{font-size: 40px;color: #333;margin-left: 88px;}
+#share>img{display: block;width: 394px;height: 62px;margin-left: 88px;margin-top: 80px;}
+#share>.txt_wrap{width: 542px;float: left;margin-left: 88px;margin-top: 50px;}
+
+#share>.txt_wrap>p{width: 542px; font-size: 20px;margin-top: 30px;color: #333;}
+#share>.txt_wrap>p>span{font-weight: bold;}
+

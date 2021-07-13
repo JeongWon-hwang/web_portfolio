@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+#info{width: 87%;margin: 0 auto;margin-top: 15vh;}
+#info>h3{font-size: 10vw;color: #333;font-weight: bold;text-align: center;}
+#info>img{display: block;height: 7vh;margin-top: 7vh;}
+
+#info>.info_txt{}
+#info>.info_txt>img{display: block; width: 100%;margin-top: 5vh;}
+#info>.info_txt>p{margin-top: 5vh;font-size: 5vw;color: #333;}
+
+

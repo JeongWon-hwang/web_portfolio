@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+
+#sub_visual{position:relative; width: 1280px;height: 400px;}
+#sub_visual>.sub_tit{position: absolute;width: 402px;height: 233px;   top: 318px;right: 0;}
+#sub_visual>.sub_tit>img{display: block;}
+#sub_visual>.sub_img>img{display: block;}
+
+
+#compliance{width: 1280px;margin: 100px auto;}
+#compliance>h3{font-size: 40px;color: #333;margin-left: 88px;}
+#compliance>img{display: block;width: 340px;height: 62px;margin-left: 88px;margin-top: 80px;}
+
+
+.tab_wrap{overflow: hidden; width: 1192px;margin-right: 0px;margin-top: 70px;}
+
+.tap_menu>ul{ width:750px; height: 60px; margin: 0 auto;margin-bottom: 60px;}
+.tap_menu>ul>li{float: left;width: 375px;height: 60px;border: 2px solid #bcbcbc; font-size: 18px;font-weight: bold;box-sizing: border-box;text-align: center;line-height: 60px;}
+.tap_menu>ul>li>a{display: block;width: 100%;height: 100%;}
+.tap_menu>ul>li>a.current{color:#fff ;background-color: #455066;}
+
+.tap_menu>.sub_menu{display: none;}
+
+.tap_menu{overflow: hidden; width: 1192px;margin-right: 0px;margin: 0 auto;}
+.tap_menu>.sub_tab1{width: 100%;}
+.tap_menu>.sub_tab1>img{margin-top: 30px;}
+.tap_menu>.sub_tab1>div{overflow: hidden;margin-top: 50px;}
+.tap_menu>.sub_tab1>div>img.compliance_img{display: block;float: right; width: 400px;height: 323px;}
+.tap_menu>.sub_tab1>div>p{float: left;width: 778px;font-size: 20px;margin-top: 20px;}
+
+.tap_menu>.sub_tab1>div.CP{width: 1192px;}
+.tap_menu>.sub_tab1>div.CP>h5{font-size: 40px;color: #333;}
+.tap_menu>.sub_tab1>div.CP>img{display: block;clear: both; width: 1192px;height: 642px;margin: 0 auto;}
+.tap_menu>.sub_tab1>div.CP>ul{margin-top: 50px;}
+.tap_menu>.sub_tab1>div.CP>ul>li{margin-top: 30px;}
+.tap_menu>.sub_tab1>div.CP>ul>li>h6{font-size: 25px;font-weight: bold;color:#2f42a1;}
+.tap_menu>.sub_tab1>div.CP>ul>li>p{font-size: 20px;margin-top: 30px;}
+
+.tap_menu>.sub_tab2{overflow: hidden; width: 100%;margin-top: 70px;}
+.tap_menu>.sub_tab2>h5{float: left;margin-left: 100px;}
+.tap_menu>.sub_tab2>img{float: right;margin-right: 200px;margin-bottom: 30px;}
+.tap_menu>.sub_tab2>.txt_wrap{overflow: hidden;height: 300px; clear: both;border: 2px solid #bcbcbc;box-sizing: border-box;}
+.tap_menu>.sub_tab2>.txt_wrap>.address{float: left;margin: 50px 0;margin-left: 50px;}
+.tap_menu>.sub_tab2>.txt_wrap>.address>dl{overflow: hidden; width: 700px; margin-bottom: 50px;}
+.tap_menu>.sub_tab2>.txt_wrap>.address>dl>dt{float: left;width: 100px; font-size: 25px;color:#2f42a1;}
+.tap_menu>.sub_tab2>.txt_wrap>.address>dl>dd{float: left;font-size: 20px;}
+.tap_menu>.sub_tab2>.txt_wrap>img{float: right;margin: 50px 0;margin-right: 100px;}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+
+#sub_visual{position:relative; width: 1280px;height: 400px;}
+#sub_visual>.sub_tit{position: absolute;width: 402px;height: 233px;   top: 318px;right: 0;}
+#sub_visual>.sub_tit>img{display: block;}
+#sub_visual>.sub_img>img{display: block;}
+
+#info{width: 1280px;margin: 100px auto;}
+#info>h3{font-size: 40px;color: #333;margin-left: 88px;}
+#info>img{display: block;width: 387px;height: 61px;margin-left: 88px;margin-top: 80px;}
+
+.info_txt{overflow: hidden; width: 1104px;margin-top: 30px;}
+
+.info_txt>p{font-size: 22px;color: #333;line-height: 30px;}
+
+.info_txt>.lft{float: left;width: 670px;height: 302px;padding-top: 10px;box-sizing: border-box;}
+.info_txt>img{display: block;float: right;width: 433px;height: 302px;}
+.info_txt>.bottom{clear: both;padding-top: 10px;}

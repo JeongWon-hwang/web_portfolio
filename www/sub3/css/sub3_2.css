@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+
+#sub_visual{position:relative; width: 1280px;height: 400px;}
+#sub_visual>.sub_tit{position: absolute;width: 402px;height: 233px;   top: 318px;right: 0;}
+#sub_visual>.sub_tit>img{display: block;}
+#sub_visual>.sub_img>img{display: block;}
+
+#ethics{width: 1280px;margin: 100px auto;}
+#ethics>h3{font-size: 40px;color: #333;margin-left: 88px;}
+#ethics>img{display: block;width: 340px;height: 62px;margin-left: 88px;margin-top: 80px;}
+
+
+#ethics>div{overflow: hidden;width: 1192px; padding-top: 50px;margin-left: 89px;}
+
+#ethics>div.operation{overflow: hidden; padding-top: 50px;margin-left: 89px;background-image: url(../images/ethics_Img01.jpg);background-position:  right top; background-repeat: no-repeat;}
+#ethics>div>h4{float: left;width: 130px; color: #333;font-size: 25px;font-weight: bold;}
+#ethics>div>p{float: left;width: 720px; color: #333;font-size: 18px;padding-left: 70px;margin-top: 10px;}
+
+.field{overflow: hidden;margin-top: 50px;}
+.field>ol{overflow: hidden;float: right;width: 995px;}
+.field>ol>li{overflow: hidden; width: 995px; float: left;color: #333;font-size: 18px;margin-top: 30px;}
+.field>ol>li>span{display:inline-block;width: 120px;}
+.field>ol>li>span.first{text-indent: -9999px;background-image: url(../images/field_tit01.gif);background-repeat: no-repeat;background-size: 95px 26px;}
+.field>ol>li>span.second{text-indent: -9999px;background-image: url(../images/field_tit02.gif);background-repeat: no-repeat;background-size: 122px 23px;}
+.field>ol>li>span.third{text-indent: -9999px;background-image: url(../images/field_tit03.gif);background-repeat: no-repeat;background-size: 103px 23px;}
+.field>ol>li>span.forth{text-indent: -9999px;background-image: url(../images/field_tit04.gif);background-repeat: no-repeat;background-size: 118px 22px;}
+
+.field>ol>li>p{float: right;width: 860px;}

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+
+#sub_visual{position:relative; width: 1280px;height: 400px;}
+#sub_visual>.sub_tit{position: absolute;width: 402px;height: 233px;   top: 318px;right: 0;}
+#sub_visual>.sub_tit>img{display: block;}
+#sub_visual>.sub_img>img{display: block;}
+
+
+#safety{width: 1280px;margin: 100px auto;}
+#safety>h3{font-size: 40px;color: #333;margin-left: 88px;}
+#safety>img{display: block;width: 316px;height: 28px;margin-left: 88px;margin-top: 80px;}
+
+#safety>div{overflow: hidden; width: 1192px;margin-left: 89px;margin-top: 50px;}
+
+#safety>div>h4{float: left;width: 130px; color: #4050a8;font-size: 25px;font-weight: bold;}
+#safety>div>h4>span{color: #8892ba;}
+#safety>div.operation>ul{float: right;width: 1000px;margin-top: 10px;}
+#safety>div.operation>ul>li{margin-bottom: 50px;}
+#safety>div.operation>ul>li>p{font-size: 18px;}
+#safety>div.operation>ul>li>p>span{display:block;font-size: 20px;font-weight: bold;}
+
+#safety>div.policy>img{float:right;width: 1060px;}
+#safety>div.policy>div{float:right;width:950px;overflow: hidden;padding-right: 80px;margin-top: 10px; box-sizing: border-box;}
+#safety>div.policy>div>ul{float:left; overflow: hidden; width: 210px;list-style: disc;}/*쩜 안나옴*/
+#safety>div.policy>div>ul:nth-child(2){float:left;margin: 0 120px;}
+#safety>div.policy>div>ul:last-child{float:right;margin-right: 0px;}
+#safety>div.policy>div>ul>li{float: left; width: 210px; margin-top: 10px;font-size: 16px;}
+
+div.roadmap{overflow: hidden;}
+div.roadmap>div{float: right; overflow: hidden;width: 1000px}
+div.roadmap>div>p{margin: 10px 0;font-size: 18px;}
+div.roadmap>div>img{float: right; width: 1000px;}
+div.roadmap>div>ul{float:left; overflow: hidden; width: 250px;list-style: disc;padding-left: 60px;box-sizing: border-box;}/*쩜 안나옴*/
+div.roadmap>div>ul:nth-child(3){float:left; overflow: hidden; width: 250px;padding-left: 40px;box-sizing: border-box;}/*쩜 안나옴*/
+div.roadmap>div>ul:nth-child(4){float:left; overflow: hidden; width: 250px;padding-left: 50px;box-sizing: border-box;}/*쩜 안나옴*/
+div.roadmap>div>ul:last-child{float:right;padding-left: 60px;box-sizing: border-box;}
+div.roadmap>div>ul>li{float: left; width: 180px; margin-top: 10px;font-size: 16px;}
+
+.propel>p{float: right; overflow: hidden;width: 1000px;font-size: 18px;margin-top: 10px;}
